@@ -11,10 +11,10 @@ light green: #A3C4BC
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 130px;
+  padding: 120px;
  }
  .image{
-  padding-left: 68px;
+  padding-left: 60px;
  }
     .wrapper {
       height: 100vh;
