@@ -50,19 +50,17 @@ class MenuAppBar extends React.Component {
     this.setState({ anchorEl: null });
   };
 
-  render() {
+ render() {
     const { classes } = this.props;
     const { auth, anchorEl } = this.state;
     const open = Boolean(anchorEl);
 
     return (
       <div className={classes.root}>
-        
         <AppBar position="static">
           <Toolbar>
             <Typography variant="h4" color="inherit" className={classes.grow}>
               Weather Application
-            <Button   className={classes.HomeButton} color="inherit">Home</Button>
             </Typography>
             {auth && (
               <div>
@@ -77,14 +75,8 @@ class MenuAppBar extends React.Component {
                 <Menu
                   id="menu-appbar"
                   anchorEl={anchorEl}
-                  anchorOrigin={{
-                    vertical: 'top',
-                    horizontal: 'right',
-                  }}
-                  transformOrigin={{
-                    vertical: 'top',
-                    horizontal: 'right',
-                  }}
+                  anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
+                  transformOrigin={{ vertical: 'top', horizontal: 'right' }}
                   open={open}
                   onClose={this.handleClose}
                 >
@@ -93,6 +85,9 @@ class MenuAppBar extends React.Component {
                 </Menu>
               </div>
             )}
+            <Button className={classes.HomeButton} color="inherit">
+              Home
+            </Button>
           </Toolbar>
         </AppBar>
       </div>
