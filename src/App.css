@@ -108,7 +108,7 @@ light green: #A3C4BC
     }
 
     .createAccount {
-      width: 100%;
+      width: 90%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -118,7 +118,7 @@ light green: #A3C4BC
       background-color: #519e8a;
       color: #fff;
       border: 2px solid #fff;
-      width: 100%;
+      width: 90%;
       margin-top: 1em;
       cursor: pointer;
       padding: 8px 0px;
